@@ -338,7 +338,7 @@ export function NewInfiniteFarming({
 
       let chainSymbol
 
-      if (chainId === 0x1389) {
+      if (chainId === 0x1388) {
         chainSymbol = 'FTM'
       }
 

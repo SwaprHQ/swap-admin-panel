@@ -239,7 +239,7 @@ export default function Header() {
 
   let chainValue
 
-  if (chainId === 0x1389) {
+  if (chainId === 0x1388) {
     chainValue = 'MNT'
   }
 
@@ -288,7 +288,7 @@ export default function Header() {
             </UNIWrapper>
           )} */}
           <AccountElement active={!!account} style={{ pointerEvents: 'auto' }}>
-            {chainId === 0x1389 && account && userEthBalance ? (
+            {chainId === 0x1388 && account && userEthBalance ? (
               <BalanceText style={{ flexShrink: 0 }} pl="0.75rem" pr="0.5rem" fontWeight={500}>
                 {userEthBalance?.toSignificant(3)} {chainValue}{' '}
               </BalanceText>

@@ -35,7 +35,7 @@ const PERMITTABLE_TOKENS: {
   // [137]: {
   //   [USDC_BINANCE.address]: { type: PermitType.AMOUNT, name: 'USD Coin', version: '2' },
   // },
-  [0x1389]: {
+  [0x1388]: {
     [USDC_POLYGON.address]: { type: PermitType.AMOUNT, name: 'USD Coin', version: '2' },
   },
 }

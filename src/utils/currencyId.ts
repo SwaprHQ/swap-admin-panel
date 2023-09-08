@@ -4,7 +4,7 @@ import { useActiveWeb3React } from '../hooks/web3'
 export function currencyId(currency: Currency, chainId: number): string {
   let chainSymbol
 
-  if (chainId === 0x1389) {
+  if (chainId === 0x1388) {
     chainSymbol = 'MNT'
   }
 

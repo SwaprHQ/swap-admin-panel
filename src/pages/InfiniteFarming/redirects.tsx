@@ -17,7 +17,7 @@ export function RedirectDuplicateTokenInfiniteFarmingIds(
   // prevent weth + eth
   let symbol
 
-  if (chainId === 0x1389) {
+  if (chainId === 0x1388) {
     symbol = 'MNT'
   }
 

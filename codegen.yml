@@ -1,9 +1,9 @@
 overrideExisting: true
 schema:
   [
-    'https://graph.testnet.mantle.xyz/subgraphs/name/cryptoalgebra/swapsicle-analytics-v1',
-    'https://graph.testnet.mantle.xyz/subgraphs/name/cryptoalgebra/swapsicle-farms-v1',
-    'https://graph.testnet.mantle.xyz/subgraphs/name/cryptoalgebra/mantle-blocks',
+    'https://mantle-subgraph.algebra.finance/subgraphs/name/cryptoalgebra/analytics',
+    'https://mantle-subgraph.algebra.finance/subgraphs/name/cryptoalgebra/farms',
+    'https://mantle-subgraph.algebra.finance/subgraphs/name/cryptoalgebra/mantle-blocks',
   ]
 documents: 'src/**/!(*.d).{ts,tsx}'
 generates:
