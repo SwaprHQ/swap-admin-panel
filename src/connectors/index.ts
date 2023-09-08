@@ -12,11 +12,11 @@ import { NetworkConnector } from './NetworkConnector'
 const WALLETCONNECT_BRIDGE_URL = process.env.REACT_APP_WALLETCONNECT_BRIDGE_URL
 
 const NETWORK_URLS: { [key in SupportedChainId]: string } = {
-  [SupportedChainId.POLYGON]: 'https://rpc.mantle.xyz',
+  [SupportedChainId.POLYGON]: 'https://mainnet.telos.net/evm',
 }
 export const network = new NetworkConnector({
   urls: NETWORK_URLS,
-  defaultChainId: 0x1388,
+  defaultChainId: 0x28,
 })
 
 let networkLibrary: Web3Provider | undefined

@@ -38,7 +38,7 @@ export function useSwapActionHandlers(): {
 
   let symbol
 
-  if (chainId === 0x1388) {
+  if (chainId === 0x28) {
     symbol = 'MNT'
   }
 
@@ -233,7 +233,7 @@ export function useDerivedSwapInfo(toggledVersion: Version): {
 function parseCurrencyFromURLParameter(urlParam: any, chainId: number): string {
   let chainSymbol
 
-  if (chainId === 0x1388) {
+  if (chainId === 0x28) {
     chainSymbol = 'MNT'
   }
 
@@ -269,7 +269,7 @@ export function queryParametersToSwapState(parsedQs: ParsedQs, chainId: number):
   let outputCurrency = parseCurrencyFromURLParameter(parsedQs.outputCurrency, chainId)
   if (inputCurrency === '' && outputCurrency === '') {
     // default to MNT input
-    if (chainId === 0x1388) {
+    if (chainId === 0x28) {
       inputCurrency = 'MNT'
     }
   } else if (inputCurrency === outputCurrency) {

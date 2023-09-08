@@ -8,7 +8,7 @@ import { AppState } from 'state'
 
 // List of supported subgraphs. Note that the app currently only support one active subgraph at a time
 const CHAIN_SUBGRAPH_URL: Record<number, string> = {
-  [SupportedChainId.POLYGON]: 'https://mantle-subgraph.algebra.finance/subgraphs/name/cryptoalgebra/analytics',
+  [SupportedChainId.POLYGON]: 'https://telos.subgraph.swapsicle.io/subgraphs/name/cryptoalgebra/analytics',
 }
 
 export const api = createApi({

@@ -7,7 +7,7 @@ export const healthClient = new ApolloClient({
 })
 
 export const blockClient = new ApolloClient({
-    uri: 'https://mantle-subgraph.algebra.finance/subgraphs/name/cryptoalgebra/mantle-blocks',
+    uri: 'https://telos.subgraph.swapsicle.io/subgraphs/name/cryptoalgebra/blocks',
     cache: new InMemoryCache(),
     queryDeduplication: true,
     defaultOptions: {
@@ -22,7 +22,7 @@ export const blockClient = new ApolloClient({
 })
 
 export const client = new ApolloClient({
-    uri: 'https://mantle-subgraph.algebra.finance/subgraphs/name/cryptoalgebra/analytics',
+    uri: 'https://telos.subgraph.swapsicle.io/subgraphs/name/cryptoalgebra/analytics',
     cache: new InMemoryCache(),
     queryDeduplication: true,
     defaultOptions: {
@@ -37,7 +37,7 @@ export const client = new ApolloClient({
 })
 
 export const farmingClient = new ApolloClient({
-    uri: 'https://mantle-subgraph.algebra.finance/subgraphs/name/cryptoalgebra/farms',
+    uri: 'https://telos.subgraph.swapsicle.io/subgraphs/name/cryptoalgebra/farms',
     cache: new InMemoryCache(),
     queryDeduplication: true,
     defaultOptions: {

@@ -11,19 +11,19 @@ export const POOL_DEPLOYER_ADDRESS: AddressMap = {
 }
 
 export const QUOTER_ADDRESSES: AddressMap = {
-  [SupportedChainId.POLYGON]: '0x061e47Ab9f31D293172efb88674782f80eCa88de'
+  [SupportedChainId.POLYGON]: '0x958E35b21E25FD2c45d6aE1a6Ae88B19fB5D3eea'
 }
 
 export const SWAP_ROUTER_ADDRESSES: AddressMap = {
-  [SupportedChainId.POLYGON]: '0xF415Ce42E82DCbA67E9053C3De4028F6aaF8A1cd'
+  [SupportedChainId.POLYGON]: '0xf9922494971eb0c5db0b301283656bC512329630'
 }
 
 export const NONFUNGIBLE_POSITION_MANAGER_ADDRESSES: AddressMap = {
-  [SupportedChainId.POLYGON]: '0x6C3189d5137E7a54C23594f7C958b6d10Ec2f7A2'
+  [SupportedChainId.POLYGON]: '0x1D24D597A94E3868eD66aa7B69b030683756E95c'
 }
 
 export const MULTICALL_ADDRESS: AddressMap = {
-  [SupportedChainId.POLYGON]: '0x7a9C3dB5DC4Ba68a16048a8dd5Ea5d1Fe62B3888'
+  [SupportedChainId.POLYGON]: '0x6C3189d5137E7a54C23594f7C958b6d10Ec2f7A2'
 }
 
 export const V3_MIGRATOR_ADDRESSES: AddressMap = {
@@ -39,11 +39,11 @@ export const FINITE_FARMING_ADDRESS: AddressMap = {
 }
 
 export const INFINITE_FARMING_ADDRESS: AddressMap = {
-  [SupportedChainId.POLYGON]: '0xbAf0985c36fBb4140271e1F4D5C2c0eE77bdf3d8'
+  [SupportedChainId.POLYGON]: '0x43c5e86EfA885186De01A06b3820e7ED4dE080D6'
 }
 
 export const FARMING_CENTER: AddressMap = {
-  [SupportedChainId.POLYGON]: '0x43c5e86EfA885186De01A06b3820e7ED4dE080D6'
+  [SupportedChainId.POLYGON]: '0x899A3A968080f8e599B5191b048EEfE67A6493F6'
 }
 
 export const V2_FACTORY_ADDRESSES: AddressMap = {

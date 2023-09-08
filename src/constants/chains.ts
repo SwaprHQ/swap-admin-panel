@@ -3,8 +3,8 @@ import optimismLogoUrl from 'assets/svg/optimism_logo.svg'
 
 export enum SupportedChainId {
   // BINANCE = 0x61,
-  // POLYGON = 0x13881,
-  POLYGON = 0x1388
+  // POLYGON = 0x281,
+  POLYGON = 0x28
 }
 
 export const ALL_SUPPORTED_CHAIN_IDS: SupportedChainId[] = [

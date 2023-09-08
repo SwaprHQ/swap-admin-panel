@@ -1,9 +1,9 @@
 overrideExisting: true
 schema:
   [
-    'https://mantle-subgraph.algebra.finance/subgraphs/name/cryptoalgebra/analytics',
-    'https://mantle-subgraph.algebra.finance/subgraphs/name/cryptoalgebra/farms',
-    'https://mantle-subgraph.algebra.finance/subgraphs/name/cryptoalgebra/mantle-blocks',
+    'https://telos.subgraph.swapsicle.io/subgraphs/name/cryptoalgebra/analytics',
+    'https://telos.subgraph.swapsicle.io/subgraphs/name/cryptoalgebra/farms',
+    'https://telos.subgraph.swapsicle.io/subgraphs/name/cryptoalgebra/blocks',
   ]
 documents: 'src/**/!(*.d).{ts,tsx}'
 generates:
