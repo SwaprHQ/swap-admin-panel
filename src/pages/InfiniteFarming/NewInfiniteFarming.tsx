@@ -260,7 +260,7 @@ export function NewInfiniteFarming({
 
   const tokenCurrency = useCurrency(rewardTokenId)
   const bonusRewardCurrency = useCurrency(bonusRewardTokenId)
-  // prevent an error if they input MNT/WETH
+  // prevent an error if they input TLOS/WETH
   //TODO
   const quoteCurrency =
     baseCurrency && currencyB && baseCurrency.wrapped.equals(currencyB.wrapped) ? undefined : currencyB

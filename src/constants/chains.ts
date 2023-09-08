@@ -41,6 +41,6 @@ export const CHAIN_INFO: ChainInfo = {
     docs: 'https://algebra.finance/',
     explorer: 'https://polygonscan.com/',
     infoLink: 'https://algebra.finance',
-    label: 'MNT',
+    label: 'TLOS',
   },
 }

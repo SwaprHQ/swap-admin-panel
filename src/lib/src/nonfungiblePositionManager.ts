@@ -249,7 +249,7 @@ export abstract class NonfungiblePositionManager extends SelfPermit {
 
       const wrappedValue = position.pool.token0.equals(wrapped) ? amount0Desired : amount1Desired
 
-      // we only need to refund if we're actually sending MNT
+      // we only need to refund if we're actually sending TLOS
       if (JSBI.greaterThan(wrappedValue, ZERO)) {
         calldatas.push(NonfungiblePositionManager.INTERFACE.encodeFunctionData('refundNativeToken'))
       }

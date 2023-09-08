@@ -5,7 +5,7 @@ export function currencyId(currency: Currency, chainId: number): string {
   let chainSymbol
 
   if (chainId === 0x28) {
-    chainSymbol = 'MNT'
+    chainSymbol = 'TLOS'
   }
 
   if (currency.isNative) return chainSymbol

@@ -18,7 +18,7 @@ export function RedirectDuplicateTokenInfiniteFarmingIds(
   let symbol
 
   if (chainId === 0x28) {
-    symbol = 'MNT'
+    symbol = 'TLOS'
   }
 
   const isETHOrWETHA =

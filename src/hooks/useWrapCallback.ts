@@ -35,7 +35,7 @@ export default function useWrapCallback(
   let chainSymbol;
 
   if (chainId === 0x28) {
-    chainSymbol = 'MNT'
+    chainSymbol = 'TLOS'
   }
 
   return useMemo(() => {

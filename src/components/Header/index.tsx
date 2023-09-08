@@ -240,7 +240,7 @@ export default function Header() {
   let chainValue
 
   if (chainId === 0x28) {
-    chainValue = 'MNT'
+    chainValue = 'TLOS'
   }
 
   return (

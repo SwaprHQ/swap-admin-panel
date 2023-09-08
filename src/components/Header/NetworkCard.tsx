@@ -202,7 +202,7 @@ export default function NetworkCard() {
           alignItems: 'center',
         }}
       >
-        <span>MNT</span>
+        <span>TLOS</span>
       </div>
     )
   }

@@ -153,7 +153,7 @@ export function getPriceOrderingFromPositionForUI(position?: Position): {
     }
   }
 
-  // if token1 is an MNT-/BTC-stable asset, set it as the base token
+  // if token1 is an TLOS-/BTC-stable asset, set it as the base token
   //TODO
   // const bases = [...Object.values(WETH9_EXTENDED), WBTC]
   const bases = [...Object.values(WETH9_EXTENDED)]

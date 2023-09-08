@@ -13,7 +13,7 @@ import ERC20ABI from 'abis/erc20.json'
 import { Erc20Interface } from 'abis/types/Erc20'
 import { SupportedChainId } from 'constants/chains'
 /**
- * Returns a map of the given addresses to their eventually consistent MNT balances.
+ * Returns a map of the given addresses to their eventually consistent TLOS balances.
  */
 export function useETHBalances(uncheckedAddresses?: (string | undefined)[]): {
   [address: string]: CurrencyAmount<Currency> | undefined

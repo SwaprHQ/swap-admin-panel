@@ -2145,8 +2145,8 @@ msgstr "{0} Dipositat"
 
 #: src/components/Header/index.tsx
 #: src/components/earn/PoolCard.tsx
-msgid "{0} MNT"
-msgstr "{0} MNT"
+msgid "{0} TLOS"
+msgstr "{0} TLOS"
 
 #: src/components/Header/NetworkCard.tsx
 msgid "{0} Explorer"

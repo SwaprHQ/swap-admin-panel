@@ -110,7 +110,7 @@ export function CurrencySearch({
   let chainSymbol
 
   if (chainId === 0x28) {
-    chainSymbol = 'MNT'
+    chainSymbol = 'TLOS'
   }
 
   ether.name = chainSymbol
@@ -118,7 +118,7 @@ export function CurrencySearch({
 
   const filteredSortedTokensWithETH: Currency[] = useMemo(() => {
     const s = debouncedQuery.toLowerCase().trim()
-    if (s === 'f' || s === 'fa' || s === 'fan' || s === 'fant' || s === 'MNT' || s === 'MNT') {
+    if (s === 'f' || s === 'fa' || s === 'fan' || s === 'fant' || s === 'TLOS' || s === 'TLOS') {
       return ether ? [ether, ...filteredSortedTokens] : filteredSortedTokens
     }
     return filteredSortedTokens

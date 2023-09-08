@@ -39,7 +39,7 @@ export function useSwapActionHandlers(): {
   let symbol
 
   if (chainId === 0x28) {
-    symbol = 'MNT'
+    symbol = 'TLOS'
   }
 
   const onCurrencySelection = useCallback(
@@ -234,7 +234,7 @@ function parseCurrencyFromURLParameter(urlParam: any, chainId: number): string {
   let chainSymbol
 
   if (chainId === 0x28) {
-    chainSymbol = 'MNT'
+    chainSymbol = 'TLOS'
   }
 
   if (typeof urlParam === 'string') {
@@ -268,9 +268,9 @@ export function queryParametersToSwapState(parsedQs: ParsedQs, chainId: number):
   let inputCurrency = parseCurrencyFromURLParameter(parsedQs.inputCurrency, chainId)
   let outputCurrency = parseCurrencyFromURLParameter(parsedQs.outputCurrency, chainId)
   if (inputCurrency === '' && outputCurrency === '') {
-    // default to MNT input
+    // default to TLOS input
     if (chainId === 0x28) {
-      inputCurrency = 'MNT'
+      inputCurrency = 'TLOS'
     }
   } else if (inputCurrency === outputCurrency) {
     // clear output if identical
