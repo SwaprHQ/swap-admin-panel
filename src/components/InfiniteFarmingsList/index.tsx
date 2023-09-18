@@ -147,6 +147,11 @@ function InfiniteFarmingItem({
         <CopyButton onClick={() => copy(pool)}>Copy</CopyButton>
       </span>
       <span>
+        <span>Reward ID:</span>
+        <span>{trim(rewardToken.id)}</span>
+        <CopyButton onClick={() => copy(rewardToken.id)}>Copy</CopyButton>
+      </span>
+      <span>
         <span>Reward: </span>
         {!addRewardsToggled && !removeRewardsToggled ? (
           <>
@@ -250,6 +255,13 @@ function InfiniteFarmingItem({
       <span>
         <span>Reward left for: </span>
         <span>{rewardLeftFor + ' min'}</span>
+      </span>
+      <span>
+        <span>Bonus Reward ID:</span>
+        <span>{bonusRewardToken.id !== ADDRESS_ZERO ? trim(bonusRewardToken.id) : '-'}</span>
+        {bonusRewardToken.id !== ADDRESS_ZERO && (
+          <CopyButton onClick={() => copy(bonusRewardToken.id)}>Copy</CopyButton>
+        )}
       </span>
       <span>
         <span>Bonus Reward: </span>
