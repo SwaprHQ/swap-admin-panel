@@ -1,15 +1,12 @@
-import arbitrumLogoUrl from 'assets/svg/arbitrum_logo.svg'
-import optimismLogoUrl from 'assets/svg/optimism_logo.svg'
 
-export enum SupportedChainId {
-  // BINANCE = 0x61,
-  // POLYGON = 0x281,
-  POLYGON = 0x28
+
+export const SupportedChainId = {
+  POLYGON: Number(process.env.REACT_APP_CHAIN_ID!)
 }
 
-export const ALL_SUPPORTED_CHAIN_IDS: SupportedChainId[] = [
+export const ALL_SUPPORTED_CHAIN_IDS = [
   // SupportedChainId.BINANCE, 
-  SupportedChainId.POLYGON
+  Number(SupportedChainId.POLYGON)
 ]
 
 export const L1_CHAIN_IDS = [] as const

@@ -3,27 +3,27 @@ import { SupportedChainId } from './chains'
 type AddressMap = { [chainId: number]: string }
 
 export const V3_CORE_FACTORY_ADDRESSES: AddressMap = {
-  [SupportedChainId.POLYGON]: '0x74c5ACD183273F29DA20e6f977e0aC3AaEcA0160'
+  [SupportedChainId.POLYGON]: process.env.REACT_APP_V3_CORE_FACTORY_ADDRESS!
 }
 
 export const POOL_DEPLOYER_ADDRESS: AddressMap = {
-  [SupportedChainId.POLYGON]: '0x70B85D5FF88f1Dad2B5F20Ac7D12B02acfa2B256'
+  [SupportedChainId.POLYGON]: process.env.REACT_APP_POOL_DEPLOYER_ADDRESS!
 }
 
 export const QUOTER_ADDRESSES: AddressMap = {
-  [SupportedChainId.POLYGON]: '0x958E35b21E25FD2c45d6aE1a6Ae88B19fB5D3eea'
+  [SupportedChainId.POLYGON]: process.env.REACT_APP_QUOTER_ADDRESS!
 }
 
 export const SWAP_ROUTER_ADDRESSES: AddressMap = {
-  [SupportedChainId.POLYGON]: '0xf9922494971eb0c5db0b301283656bC512329630'
+  [SupportedChainId.POLYGON]: process.env.REACT_APP_SWAP_ROUTER_ADDRESS!
 }
 
 export const NONFUNGIBLE_POSITION_MANAGER_ADDRESSES: AddressMap = {
-  [SupportedChainId.POLYGON]: '0x1D24D597A94E3868eD66aa7B69b030683756E95c'
+  [SupportedChainId.POLYGON]: process.env.REACT_APP_NONFUNGIBLE_POSITION_MANAGER_ADDRESS!
 }
 
 export const MULTICALL_ADDRESS: AddressMap = {
-  [SupportedChainId.POLYGON]: '0x6C3189d5137E7a54C23594f7C958b6d10Ec2f7A2'
+  [SupportedChainId.POLYGON]: process.env.REACT_APP_MULTICALL_ADDRESS!
 }
 
 export const V3_MIGRATOR_ADDRESSES: AddressMap = {
@@ -39,11 +39,11 @@ export const FINITE_FARMING_ADDRESS: AddressMap = {
 }
 
 export const INFINITE_FARMING_ADDRESS: AddressMap = {
-  [SupportedChainId.POLYGON]: '0x43c5e86EfA885186De01A06b3820e7ED4dE080D6'
+  [SupportedChainId.POLYGON]: process.env.REACT_APP_ETERNAL_FARMING_ADDRESS!
 }
 
 export const FARMING_CENTER: AddressMap = {
-  [SupportedChainId.POLYGON]: '0x899A3A968080f8e599B5191b048EEfE67A6493F6'
+  [SupportedChainId.POLYGON]: process.env.REACT_APP_FARMING_CENTER_ADDRESS!
 }
 
 export const V2_FACTORY_ADDRESSES: AddressMap = {

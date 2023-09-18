@@ -38,8 +38,8 @@ export function useSwapActionHandlers(): {
 
   let symbol
 
-  if (chainId === 0x28) {
-    symbol = 'TLOS'
+  if (chainId === Number(process.env.REACT_APP_CHAIN_ID)) {
+    symbol = process.env.REACT_APP_CHAIN_SYMBOL
   }
 
   const onCurrencySelection = useCallback(
@@ -233,8 +233,8 @@ export function useDerivedSwapInfo(toggledVersion: Version): {
 function parseCurrencyFromURLParameter(urlParam: any, chainId: number): string {
   let chainSymbol
 
-  if (chainId === 0x28) {
-    chainSymbol = 'TLOS'
+  if (chainId === Number(process.env.REACT_APP_CHAIN_ID)) {
+    chainSymbol = process.env.REACT_APP_CHAIN_SYMBOL
   }
 
   if (typeof urlParam === 'string') {
@@ -269,8 +269,8 @@ export function queryParametersToSwapState(parsedQs: ParsedQs, chainId: number):
   let outputCurrency = parseCurrencyFromURLParameter(parsedQs.outputCurrency, chainId)
   if (inputCurrency === '' && outputCurrency === '') {
     // default to TLOS input
-    if (chainId === 0x28) {
-      inputCurrency = 'TLOS'
+    if (chainId === Number(process.env.REACT_APP_CHAIN_ID)) {
+      inputCurrency = process.env.REACT_APP_CHAIN_SYMBOL
     }
   } else if (inputCurrency === outputCurrency) {
     // clear output if identical

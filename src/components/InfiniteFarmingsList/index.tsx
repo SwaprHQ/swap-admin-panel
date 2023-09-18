@@ -408,8 +408,10 @@ export function InfiniteFarmingsList({
   type: any
   items: number
 }) {
-  return !list || loading ? (
+  return loading ? (
     <span>Loading</span>
+  ) : !list || list.length === 0 ? (
+    <span>No farms</span>
   ) : (
     <>
       <List>

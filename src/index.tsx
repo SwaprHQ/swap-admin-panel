@@ -34,7 +34,7 @@ if (!!window.ethereum) {
 const GOOGLE_ANALYTICS_ID: string | undefined = process.env.REACT_APP_GOOGLE_ANALYTICS_ID
 
 const client = new ApolloClient({
-  uri: 'https://telos.subgraph.swapsicle.io/subgraphs/name/cryptoalgebra/analytics',
+  uri: process.env.REACT_APP_SUBGRAPH_INFO,
   cache: new InMemoryCache(),
 })
 

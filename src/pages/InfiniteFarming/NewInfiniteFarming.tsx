@@ -338,8 +338,8 @@ export function NewInfiniteFarming({
 
       let chainSymbol
 
-      if (chainId === 0x28) {
-        chainSymbol = 'FTM'
+      if (chainId === Number(process.env.REACT_APP_CHAIN_ID)) {
+        chainSymbol = process.env.REACT_APP_CHAIN_SYMBOL
       }
 
       if (currencyIdNew === currencyIdOther) {
@@ -562,7 +562,12 @@ export function NewInfiniteFarming({
               checked={'Yes'}
               unchecked={'No'}
               isActive={hasBonusReward}
-              toggle={() => toggleHasBonusReward(!hasBonusReward)}
+              toggle={() => {
+                toggleHasBonusReward(!hasBonusReward)
+                history.push(`/infinite-farming/create-event/${currencyIdA}/${currencyIdB}/${rewardTokenId}`)
+                setBonusReward('')
+                setBonusRewardRate('')
+              }}
             />
           </div>
           <div style={{ display: 'flex', marginTop: '1rem' }}>

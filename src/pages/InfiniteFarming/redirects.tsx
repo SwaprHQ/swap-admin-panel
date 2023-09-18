@@ -17,8 +17,8 @@ export function RedirectDuplicateTokenInfiniteFarmingIds(
   // prevent weth + eth
   let symbol
 
-  if (chainId === 0x28) {
-    symbol = 'TLOS'
+  if (chainId === Number(process.env.REACT_APP_CHAIN_ID)) {
+    symbol = process.env.REACT_APP_CHAIN_SYMBOL
   }
 
   const isETHOrWETHA =

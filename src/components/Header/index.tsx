@@ -239,8 +239,8 @@ export default function Header() {
 
   let chainValue
 
-  if (chainId === 0x28) {
-    chainValue = 'TLOS'
+  if (chainId === Number(process.env.REACT_APP_CHAIN_ID)) {
+    chainValue = process.env.REACT_APP_CHAIN_SYMBOL
   }
 
   return (
@@ -288,7 +288,7 @@ export default function Header() {
             </UNIWrapper>
           )} */}
           <AccountElement active={!!account} style={{ pointerEvents: 'auto' }}>
-            {chainId === 0x28 && account && userEthBalance ? (
+            {Number(chainId) === Number(process.env.REACT_APP_CHAIN_ID) && account && userEthBalance ? (
               <BalanceText style={{ flexShrink: 0 }} pl="0.75rem" pr="0.5rem" fontWeight={500}>
                 {userEthBalance?.toSignificant(3)} {chainValue}{' '}
               </BalanceText>

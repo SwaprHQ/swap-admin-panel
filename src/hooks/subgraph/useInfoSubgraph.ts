@@ -160,9 +160,10 @@ export function useInfoSubgraph() {
         } catch (err) {
             console.error('Eternal farmings', err);
             setInfiniteFarmings(null)
+        } finally {
+            setInfiniteFarmingsLoading(false)
         }
 
-        setInfiniteFarmingsLoading(false)
     }
 
     async function fetchInfoPools(reload?: boolean) {

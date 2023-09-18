@@ -34,8 +34,8 @@ export default function useWrapCallback(
 
   let chainSymbol;
 
-  if (chainId === 0x28) {
-    chainSymbol = 'TLOS'
+  if (chainId === Number(process.env.REACT_APP_CHAIN_ID)) {
+    chainSymbol = process.env.REACT_APP_CHAIN_SYMBOL
   }
 
   return useMemo(() => {

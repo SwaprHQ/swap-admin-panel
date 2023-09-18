@@ -7,7 +7,7 @@ import { getAddress, getCreate2Address } from "ethers/lib/utils"
 
 export const ADDRESS_ZERO = '0x0000000000000000000000000000000000000000'
 
-export const POOL_INIT_CODE_HASH = '0x634db8d334cf38f8d669064fefe5c4f5cf194cab753e4ed23256fb4dd545ed7a'
+export const POOL_INIT_CODE_HASH = process.env.REACT_APP_POOL_INIT_CODE_HASH!
 
 /**
  * The default factory enabled fee amounts, denominated in hundredths of bips.

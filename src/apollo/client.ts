@@ -7,7 +7,7 @@ export const healthClient = new ApolloClient({
 })
 
 export const blockClient = new ApolloClient({
-    uri: 'https://telos.subgraph.swapsicle.io/subgraphs/name/cryptoalgebra/blocks',
+    uri: process.env.REACT_APP_SUBGRAPH_BLOCKS,
     cache: new InMemoryCache(),
     queryDeduplication: true,
     defaultOptions: {
@@ -22,7 +22,7 @@ export const blockClient = new ApolloClient({
 })
 
 export const client = new ApolloClient({
-    uri: 'https://telos.subgraph.swapsicle.io/subgraphs/name/cryptoalgebra/analytics',
+    uri: process.env.REACT_APP_SUBGRAPH_INFO,
     cache: new InMemoryCache(),
     queryDeduplication: true,
     defaultOptions: {
@@ -37,7 +37,7 @@ export const client = new ApolloClient({
 })
 
 export const farmingClient = new ApolloClient({
-    uri: 'https://telos.subgraph.swapsicle.io/subgraphs/name/cryptoalgebra/farms',
+    uri: process.env.REACT_APP_SUBGRAPH_FARMS,
     cache: new InMemoryCache(),
     queryDeduplication: true,
     defaultOptions: {

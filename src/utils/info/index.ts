@@ -62,14 +62,14 @@ export function deserializeToken(serializedToken: SerializedToken): Token {
 
 export function formatTokenSymbol(address: string, symbol: string) {
     if (WETH_ADDRESSES.includes(address)) {
-        return 'TLOS'
+        return process.env.REACT_APP_CHAIN_SYMBOL
     }
     return symbol
 }
 
 export function formatTokenName(address: string, name: string) {
     if (WETH_ADDRESSES.includes(address)) {
-        return 'TLOS'
+        return process.env.REACT_APP_CHAIN_SYMBOL
     }
     return name
 }

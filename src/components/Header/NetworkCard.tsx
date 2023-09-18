@@ -202,7 +202,7 @@ export default function NetworkCard() {
           alignItems: 'center',
         }}
       >
-        <span>TLOS</span>
+        <span>{process.env.REACT_APP_CHAIN_SYMBOL}</span>
       </div>
     )
   }

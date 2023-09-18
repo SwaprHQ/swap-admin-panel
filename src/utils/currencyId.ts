@@ -4,8 +4,8 @@ import { useActiveWeb3React } from '../hooks/web3'
 export function currencyId(currency: Currency, chainId: number): string {
   let chainSymbol
 
-  if (chainId === 0x28) {
-    chainSymbol = 'TLOS'
+  if (chainId === Number(process.env.REACT_APP_CHAIN_ID)) {
+    chainSymbol = process.env.REACT_APP_CHAIN_SYMBOL
   }
 
   if (currency.isNative) return chainSymbol

@@ -292,7 +292,7 @@ export default function WalletModal({
           <ContentWrapper>
             {error instanceof UnsupportedChainIdError ? (
               <h5>
-                <Trans>Please connect to the appropriate TLOS network.</Trans>
+                <Trans>{`Please connect to the appropriate ${process.env.REACT_APP_CHAIN_SYMBOL} network.`}</Trans>
               </h5>
             ) : (
               <Trans>Error connecting. Try refreshing the page.</Trans>
