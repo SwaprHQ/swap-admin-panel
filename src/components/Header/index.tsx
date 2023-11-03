@@ -249,7 +249,7 @@ export default function Header() {
         <AlgIcon>
           <img
             width={'160px'}
-            src={'https://www.swapsicle.io/_next/image?url=%2Fimages%2Flogo-light.svg&w=3840&q=75'}
+            src={'https://swapr.liquidity.eth.limo/static/media/swapr-logo.763fce338b3827b675cf717fd40029ba.svg'}
             alt="logo"
           />
         </AlgIcon>

@@ -1,9 +1,9 @@
 overrideExisting: true
 schema:
   [
-    'https://telos.subgraph.swapsicle.io/subgraphs/name/cryptoalgebra/analytics',
-    'https://telos.subgraph.swapsicle.io/subgraphs/name/cryptoalgebra/farms',
-    'https://telos.subgraph.swapsicle.io/subgraphs/name/cryptoalgebra/blocks',
+    'https://api.thegraph.com/subgraphs/name/swaprhq/algebra-v19',
+    'https://api.thegraph.com/subgraphs/name/swaprhq/algebrafarming-v19',
+    'https://api.thegraph.com/subgraphs/name/swaprhq/algebrablocks-v19',
   ]
 documents: 'src/**/!(*.d).{ts,tsx}'
 generates:
