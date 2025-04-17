@@ -5,10 +5,11 @@ import { DocumentNode } from 'graphql'
 import { ClientError, gql, GraphQLClient } from 'graphql-request'
 import { AppState } from 'state'
 
+const SUBGRAPH_API_KEY = process.env.REACT_APP_SUBGRAPH_API_KEY
 
 // List of supported subgraphs. Note that the app currently only support one active subgraph at a time
 const CHAIN_SUBGRAPH_URL: Record<number, string> = {
-  [SupportedChainId.POLYGON]: 'https://api.thegraph.com/subgraphs/name/swaprhq/algebra-v19',
+  [SupportedChainId.POLYGON]: `https://gateway.thegraph.com/api/${SUBGRAPH_API_KEY}/subgraphs/id/YwkNWffc8UTH77wDqGWgMShMq1uXdiQsD5wrD5MzKwJ`,
 }
 
 export const api = createApi({

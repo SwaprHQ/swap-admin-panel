@@ -31,10 +31,11 @@ if (!!window.ethereum) {
   window.ethereum.autoRefreshOnNetworkChange = false
 }
 
+const SUBGRAPH_API_KEY = process.env.REACT_APP_SUBGRAPH_API_KEY
 const GOOGLE_ANALYTICS_ID: string | undefined = process.env.REACT_APP_GOOGLE_ANALYTICS_ID
 
 const client = new ApolloClient({
-  uri: 'https://api.thegraph.com/subgraphs/name/swaprhq/algebra-v19',
+  uri: `https://gateway.thegraph.com/api/${SUBGRAPH_API_KEY}/subgraphs/id/YwkNWffc8UTH77wDqGWgMShMq1uXdiQsD5wrD5MzKwJ`,
   cache: new InMemoryCache(),
 })
 

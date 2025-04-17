@@ -1,9 +1,9 @@
 overrideExisting: true
 schema:
   [
-    'https://api.thegraph.com/subgraphs/name/swaprhq/algebra-v19',
-    'https://api.thegraph.com/subgraphs/name/swaprhq/algebrafarming-v19',
-    'https://api.thegraph.com/subgraphs/name/swaprhq/algebrablocks-v19',
+    'https://gateway.thegraph.com/api/934eea124527074271ec1025a4873f70/subgraphs/id/YwkNWffc8UTH77wDqGWgMShMq1uXdiQsD5wrD5MzKwJ',
+    'https://gateway-arbitrum.network.thegraph.com/api/934eea124527074271ec1025a4873f70/subgraphs/id/4WysHZ1gFJcv1HLAobLMx3dS9B6aovExzyG3n7kRjwKT',
+    'https://gateway-arbitrum.network.thegraph.com/api/934eea124527074271ec1025a4873f70/subgraphs/id/FSFGfeobVFdtoWnGkULtLQ5vYu38tc9BxYR1e1yXjVPZ',
   ]
 documents: 'src/**/!(*.d).{ts,tsx}'
 generates:
